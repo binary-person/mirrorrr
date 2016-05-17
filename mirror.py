@@ -236,6 +236,6 @@ class MirrorHandler(BaseHandler):
 app = webapp2.WSGIApplication([
   (r"/", HomeHandler),
   (r"/main", HomeHandler),
-  (r"/em([^/]+).*", MirrorHandler),
+  (r"/emergencys/([^/]+).*", MirrorHandler),
   (r"/warmup", WarmupHandler),
 ], debug=DEBUG)
